@@ -9,7 +9,7 @@
 		root["datalasso"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
+/******/ 	// The module cache  
 /******/ 	var installedModules = {};
 
 /******/ 	// The require function
@@ -40836,7 +40836,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	/*eslint-disable no-self-compare */
@@ -45657,7 +45657,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
 	 * @providesModule Dispatcher
-	 * 
+	 *
 	 * @preventMunge
 	 */
 
@@ -51058,7 +51058,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	          svg.remove();
 	        }
 	      }
-	      if (d3_mouse_bug44083) point.x = e.pageX, point.y = e.pageY; else point.x = e.clientX, 
+	      if (d3_mouse_bug44083) point.x = e.pageX, point.y = e.pageY; else point.x = e.clientX,
 	      point.y = e.clientY;
 	      point = point.matrixTransform(container.getScreenCTM().inverse());
 	      return [ point.x, point.y ];
@@ -51433,7 +51433,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 	    function mousewheeled() {
 	      var dispatch = event.of(this, arguments);
-	      if (mousewheelTimer) clearTimeout(mousewheelTimer); else d3_selection_interrupt.call(this), 
+	      if (mousewheelTimer) clearTimeout(mousewheelTimer); else d3_selection_interrupt.call(this),
 	      translate0 = location(center0 = center || d3.mouse(this)), zoomstarted(dispatch);
 	      mousewheelTimer = setTimeout(function() {
 	        mousewheelTimer = null;
@@ -51802,7 +51802,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  d3.xhr = d3_xhrType(d3_identity);
 	  function d3_xhrType(response) {
 	    return function(url, mimeType, callback) {
-	      if (arguments.length === 2 && typeof mimeType === "function") callback = mimeType, 
+	      if (arguments.length === 2 && typeof mimeType === "function") callback = mimeType,
 	      mimeType = null;
 	      return d3_xhr(url, mimeType, response, callback);
 	    };
@@ -52643,7 +52643,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return n ? (date.y = d3_time_expandYear(+n[0]), i + n[0].length) : -1;
 	  }
 	  function d3_time_parseZone(date, string, i) {
-	    return /^[+-]\d{4}$/.test(string = string.slice(i, i + 5)) ? (date.Z = -string, 
+	    return /^[+-]\d{4}$/.test(string = string.slice(i, i + 5)) ? (date.Z = -string,
 	    i + 5) : -1;
 	  }
 	  function d3_time_expandYear(d) {
@@ -52836,7 +52836,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var λ00, φ00, λ0, cosφ0, sinφ0;
 	    d3_geo_area.point = function(λ, φ) {
 	      d3_geo_area.point = nextPoint;
-	      λ0 = (λ00 = λ) * d3_radians, cosφ0 = Math.cos(φ = (φ00 = φ) * d3_radians / 2 + π / 4), 
+	      λ0 = (λ00 = λ) * d3_radians, cosφ0 = Math.cos(φ = (φ00 = φ) * d3_radians / 2 + π / 4),
 	      sinφ0 = Math.sin(φ);
 	    };
 	    function nextPoint(λ, φ) {
@@ -54665,7 +54665,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      return _ ? center([ -_[1], _[0] ]) : (_ = center(), [ _[1], -_[0] ]);
 	    };
 	    projection.rotate = function(_) {
-	      return _ ? rotate([ _[0], _[1], _.length > 2 ? _[2] + 90 : 90 ]) : (_ = rotate(), 
+	      return _ ? rotate([ _[0], _[1], _.length > 2 ? _[2] + 90 : 90 ]) : (_ = rotate(),
 	      [ _[0], _[1], _[2] - 90 ]);
 	    };
 	    return rotate([ 0, 0, 90 ]);
@@ -55519,7 +55519,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    quadtree.extent = function(_) {
 	      if (!arguments.length) return x1 == null ? null : [ [ x1, y1 ], [ x2, y2 ] ];
-	      if (_ == null) x1 = y1 = x2 = y2 = null; else x1 = +_[0][0], y1 = +_[0][1], x2 = +_[1][0], 
+	      if (_ == null) x1 = y1 = x2 = y2 = null; else x1 = +_[0][0], y1 = +_[0][1], x2 = +_[1][0],
 	      y2 = +_[1][1];
 	      return quadtree;
 	    };
@@ -57244,7 +57244,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return d3_layout_treemapPad(node, x);
 	      }
 	      var type;
-	      pad = (padding = x) == null ? d3_layout_treemapPadNull : (type = typeof x) === "function" ? padFunction : type === "number" ? (x = [ x, x, x, x ], 
+	      pad = (padding = x) == null ? d3_layout_treemapPadNull : (type = typeof x) === "function" ? padFunction : type === "number" ? (x = [ x, x, x, x ],
 	      padConstant) : padConstant;
 	      return treemap;
 	    };
@@ -57647,7 +57647,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    scale.rangePoints = function(x, padding) {
 	      if (arguments.length < 2) padding = 0;
-	      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = (start + stop) / 2, 
+	      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = (start + stop) / 2,
 	      0) : (stop - start) / (domain.length - 1 + padding);
 	      range = steps(start + step * padding / 2, step);
 	      rangeBand = 0;
@@ -57659,7 +57659,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 	    scale.rangeRoundPoints = function(x, padding) {
 	      if (arguments.length < 2) padding = 0;
-	      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = stop = Math.round((start + stop) / 2), 
+	      var start = x[0], stop = x[1], step = domain.length < 2 ? (start = stop = Math.round((start + stop) / 2),
 	      0) : (stop - start) / (domain.length - 1 + padding) | 0;
 	      range = steps(start + Math.round(step * padding / 2 + (stop - start - (domain.length - 1 + padding) * step) / 2), step);
 	      rangeBand = 0;
@@ -58087,7 +58087,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return points.length < 4 ? d3_svg_lineLinear(points) : points[1] + d3_svg_lineHermite(points.slice(1, -1), d3_svg_lineCardinalTangents(points, tension));
 	  }
 	  function d3_svg_lineCardinalClosed(points, tension) {
-	    return points.length < 3 ? d3_svg_lineLinearClosed(points) : points[0] + d3_svg_lineHermite((points.push(points[0]), 
+	    return points.length < 3 ? d3_svg_lineLinearClosed(points) : points[0] + d3_svg_lineHermite((points.push(points[0]),
 	    points), d3_svg_lineCardinalTangents([ points[points.length - 2] ].concat(points, [ points[1] ]), tension));
 	  }
 	  function d3_svg_lineCardinal(points, tension) {
@@ -58860,7 +58860,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var g = d3.select(this);
 	        var scale0 = this.__chart__ || scale, scale1 = this.__chart__ = scale.copy();
 	        var ticks = tickValues == null ? scale1.ticks ? scale1.ticks.apply(scale1, tickArguments_) : scale1.domain() : tickValues, tickFormat = tickFormat_ == null ? scale1.tickFormat ? scale1.tickFormat.apply(scale1, tickArguments_) : d3_identity : tickFormat_, tick = g.selectAll(".tick").data(ticks, scale1), tickEnter = tick.enter().insert("g", ".domain").attr("class", "tick").style("opacity", ε), tickExit = d3.transition(tick.exit()).style("opacity", ε).remove(), tickUpdate = d3.transition(tick.order()).style("opacity", 1), tickSpacing = Math.max(innerTickSize, 0) + tickPadding, tickTransform;
-	        var range = d3_scaleRange(scale1), path = g.selectAll(".domain").data([ 0 ]), pathUpdate = (path.enter().append("path").attr("class", "domain"), 
+	        var range = d3_scaleRange(scale1), path = g.selectAll(".domain").data([ 0 ]), pathUpdate = (path.enter().append("path").attr("class", "domain"),
 	        d3.transition(path));
 	        tickEnter.append("line");
 	        tickEnter.append("text");
@@ -61667,7 +61667,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			return this;
 
 		},
-		
+
 		subScalar: function ( s ) {
 
 			this.x -= s;
@@ -62308,7 +62308,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 
 		setFromMatrixColumn: function ( index, matrix ) {
-			
+
 			var offset = index * 4;
 
 			var me = matrix.elements;
@@ -64489,17 +64489,17 @@ return /******/ (function(modules) { // webpackBootstrap
 		},
 
 		extractBasis: function ( xAxis, yAxis, zAxis ) {
-	 
+
 			var te = this.elements;
-	 
+
 			xAxis.set( te[ 0 ], te[ 1 ], te[ 2 ] );
 			yAxis.set( te[ 4 ], te[ 5 ], te[ 6 ] );
 			zAxis.set( te[ 8 ], te[ 9 ], te[ 10 ] );
-	 
+
 			return this;
-	 		
+
 		},
-	 
+
 		makeBasis: function ( xAxis, yAxis, zAxis ) {
 
 			this.set(
@@ -65650,7 +65650,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				// in order to always return an intersect point that is in front of the ray.
 				if ( t0 < 0 ) return this.at( t1, optionalTarget );
 
-				// else t0 is in front of the ray, so return the first collision point scaled by t0 
+				// else t0 is in front of the ray, so return the first collision point scaled by t0
 				return this.at( t0, optionalTarget );
 
 			}
@@ -70799,7 +70799,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		THREE.Object3D.call( this );
 
 		this.type = 'Light';
-		
+
 		this.color = new THREE.Color( color );
 
 	};
@@ -71739,7 +71739,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				THREE.Cache.add( url, this );
 
 				if ( onLoad ) onLoad( this );
-				
+
 				scope.manager.itemEnd( url );
 
 			}, false );
@@ -74253,7 +74253,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		this.uuid = THREE.Math.generateUUID();
 
 		this.type = 'MeshFaceMaterial';
-		
+
 		this.materials = materials instanceof Array ? materials : [];
 
 	};
@@ -74713,7 +74713,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	THREE.CubeTexture = function ( images, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy ) {
 
 		mapping = mapping !== undefined ? mapping : THREE.CubeReflectionMapping;
-		
+
 		THREE.Texture.call( this, images, mapping, wrapS, wrapT, magFilter, minFilter, format, type, anisotropy );
 
 		this.images = images;
@@ -75226,7 +75226,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		THREE.Object3D.call( this );
 
 		this.type = 'Mesh';
-		
+
 		this.geometry = geometry !== undefined ? geometry : new THREE.Geometry();
 		this.material = material !== undefined ? material : new THREE.MeshBasicMaterial( { color: Math.random() * 0xffffff } );
 
@@ -75718,7 +75718,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	THREE.Skeleton.prototype.update = ( function () {
 
 		var offsetMatrix = new THREE.Matrix4();
-		
+
 		return function () {
 
 			// flatten bone matrices to array
@@ -75739,7 +75739,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				this.boneTexture.needsUpdate = true;
 
 			}
-			
+
 		};
 
 	} )();
@@ -84587,7 +84587,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 		return function ( gl, type, string ) {
 
-			var shader = gl.createShader( type ); 
+			var shader = gl.createShader( type );
 
 			gl.shaderSource( shader, string );
 			gl.compileShader( shader );
@@ -86813,7 +86813,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	THREE.FontUtils.generateShapes = function ( text, parameters ) {
 
-		// Parameters 
+		// Parameters
 
 		parameters = parameters || {};
 
@@ -87591,7 +87591,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 		this.curves = [];
 		this.bends = [];
-		
+
 		this.autoClose = false; // Automatically closes the path
 	};
 
@@ -87616,11 +87616,11 @@ return /******/ (function(modules) { // webpackBootstrap
 		// Add a line curve if start and end of lines are not connected
 		var startPoint = this.curves[0].getPoint(0);
 		var endPoint = this.curves[this.curves.length - 1].getPoint(1);
-		
+
 		if (! startPoint.equals(endPoint)) {
 			this.curves.push( new THREE.LineCurve(endPoint, startPoint) );
 		}
-		
+
 	};
 
 	// To get accurate point with reference to
@@ -87968,7 +87968,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			}
 
 		};
-		
+
 	}() );
 
 	// File:src/extras/core/Path.js
@@ -88351,7 +88351,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				//console.log(points);
 
 				break;
-			  
+
 			case THREE.PathActions.ELLIPSE:
 
 				var aX = args[ 0 ], aY = args[ 1 ],
@@ -88554,7 +88554,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		holesFirst = isCCW ? ! holesFirst : holesFirst;
 
 		// console.log("Holes first", holesFirst);
-		
+
 		var betterShapeHoles = [];
 		var newShapes = [];
 		var newShapeHoles = [];
@@ -88580,7 +88580,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				newShapes[mainIdx] = { s: new THREE.Shape(), p: tmpPoints };
 				newShapes[mainIdx].s.actions = tmpPath.actions;
 				newShapes[mainIdx].s.curves = tmpPath.curves;
-				
+
 				if ( holesFirst )	mainIdx ++;
 				newShapeHoles[mainIdx] = [];
 
@@ -89436,7 +89436,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			angle = this.aStartAngle + t * deltaAngle;
 
 		}
-		
+
 		var vector = new THREE.Vector2();
 
 		vector.x = this.aX + this.xRadius * Math.cos( angle );
@@ -91145,14 +91145,14 @@ return /******/ (function(modules) { // webpackBootstrap
 		function getBevelVec( inPt, inPrev, inNext ) {
 
 			var EPSILON = 0.0000000001;
-			
+
 			// computes for inPt the corresponding point inPt' on a new contour
 			//   shiftet by 1 unit (length of normalized vector) to the left
 			// if we walk along contour clockwise, this new contour is outside the old one
 			//
 			// inPt' is the intersection of the two lines parallel to the two
 			//  adjacent edges of inPt at a distance of 1 unit on the left side.
-			
+
 			var v_trans_x, v_trans_y, shrink_by = 1;		// resulting translation vector for inPt
 
 			// good reading for geometry algorithms (here: line-line intersection)
@@ -91160,38 +91160,38 @@ return /******/ (function(modules) { // webpackBootstrap
 
 			var v_prev_x = inPt.x - inPrev.x, v_prev_y = inPt.y - inPrev.y;
 			var v_next_x = inNext.x - inPt.x, v_next_y = inNext.y - inPt.y;
-			
+
 			var v_prev_lensq = ( v_prev_x * v_prev_x + v_prev_y * v_prev_y );
-			
+
 			// check for colinear edges
 			var colinear0 = ( v_prev_x * v_next_y - v_prev_y * v_next_x );
-			
+
 			if ( Math.abs( colinear0 ) > EPSILON ) {		// not colinear
-				
+
 				// length of vectors for normalizing
-		
+
 				var v_prev_len = Math.sqrt( v_prev_lensq );
 				var v_next_len = Math.sqrt( v_next_x * v_next_x + v_next_y * v_next_y );
-				
+
 				// shift adjacent points by unit vectors to the left
-		
+
 				var ptPrevShift_x = ( inPrev.x - v_prev_y / v_prev_len );
 				var ptPrevShift_y = ( inPrev.y + v_prev_x / v_prev_len );
-				
+
 				var ptNextShift_x = ( inNext.x - v_next_y / v_next_len );
 				var ptNextShift_y = ( inNext.y + v_next_x / v_next_len );
-		
+
 				// scaling factor for v_prev to intersection point
-		
+
 				var sf = (  ( ptNextShift_x - ptPrevShift_x ) * v_next_y -
 							( ptNextShift_y - ptPrevShift_y ) * v_next_x    ) /
 						  ( v_prev_x * v_next_y - v_prev_y * v_next_x );
-		
+
 				// vector from inPt to intersection point
-		
+
 				v_trans_x = ( ptPrevShift_x + v_prev_x * sf - inPt.x );
 				v_trans_y = ( ptPrevShift_y + v_prev_y * sf - inPt.y );
-		
+
 				// Don't normalize!, otherwise sharp corners become ugly
 				//  but prevent crazy spikes
 				var v_trans_lensq = ( v_trans_x * v_trans_x + v_trans_y * v_trans_y )
@@ -91200,7 +91200,7 @@ return /******/ (function(modules) { // webpackBootstrap
 				} else {
 					shrink_by = Math.sqrt( v_trans_lensq / 2 );
 				}
-				
+
 			} else {		// handle special case of colinear edges
 
 				var direction_eq = false;		// assumes: opposite
@@ -91764,7 +91764,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @author bhouston / http://exocortex.com
 	 */
 
-	// points - to create a closed torus, one must use a set of points 
+	// points - to create a closed torus, one must use a set of points
 	//    like so: [ a, b, c, d, a ], see first is the same as last.
 	// segments - the number of circumference segments to create
 	// phiStart - the starting radian
@@ -92098,7 +92098,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			phiStart: phiStart,
 			phiLength: phiLength,
 			thetaStart: thetaStart,
-			thetaLength: thetaLength 
+			thetaLength: thetaLength
 		};
 
 		radius = radius || 50;
@@ -92372,7 +92372,7 @@ return /******/ (function(modules) { // webpackBootstrap
 		p = p || 2;
 		q = q || 3;
 		heightScale = heightScale || 1;
-		
+
 		var grid = new Array( radialSegments );
 		var tang = new THREE.Vector3();
 		var n = new THREE.Vector3();
@@ -93634,7 +93634,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	THREE.CameraHelper.prototype.update = function () {
 
 		var geometry, pointMap;
-		
+
 		var vector = new THREE.Vector3();
 		var camera = new THREE.Camera();
 
@@ -95132,7 +95132,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        // Mouse buttons
 	        this.mouseButtons = { ORBIT: MOUSE.LEFT, ZOOM: MOUSE.MIDDLE, PAN: MOUSE.RIGHT };
-	        
+
 	        this.quat = new THREE.Quaternion();
 	        this.quatInverse = this.quat.clone().inverse();
 
@@ -95168,7 +95168,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var lastPosition = new THREE.Vector3();
 	        var lastQuaternion = new THREE.Quaternion();
 	        var yUpVector = new THREE.Vector3( 0, 1, 0 );
-	        
+
 	        var STATE = { NONE : -1, ROTATE : 0, DOLLY : 1, PAN : 2, TOUCH_ROTATE : 3, TOUCH_DOLLY : 4, TOUCH_PAN : 5 };
 
 	        var state = STATE.NONE;
@@ -96166,7 +96166,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 *
 	 * It is described by 5 points - one for a camera that is the tip of the selection
 	 * and 4 points that are in the base of the frustum.
-	 * 
+	 *
 	 *                [camera]
 	 *                   ▼
 	 *
