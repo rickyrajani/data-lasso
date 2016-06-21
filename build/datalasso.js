@@ -9,7 +9,7 @@
 		root["datalasso"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache  
+/******/ 	// The module 
 /******/ 	var installedModules = {};
 
 /******/ 	// The require function
