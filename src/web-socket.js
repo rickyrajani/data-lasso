@@ -11,10 +11,14 @@ function WebSocket() {
 
     var socket = io.connect('http://localhost:3030');
     var p2p = new P2P(socket, opts);
-    p2p.usePeerConnection = true;
+    //p2p.usePeerConnection = true;
 
     p2p.on('ready', function(data){
         console.log(data);
+    });
+
+    p2p.on('peer-msg', function (data) {
+        console.log('From a peer %s', data);
     });
 
     return p2p;

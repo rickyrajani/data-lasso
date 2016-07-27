@@ -42,13 +42,10 @@ var DataModel = Model.extend({
      */
     dispatchCallback: function (action) {
         if (this.p2p) {
-            if (this.options.mode == 'master') {
-                this.p2p.emit('peer-msg', 'action data');
-            } else {
-                this.p2p.on('peer-msg', function(data) {
-                    console.log(data);
-                });
-            }
+            this.p2p.emit('peer-msg', 'action');
+            this.p2p.on('peer-msg', function(data) {
+                //console.log(data);
+            });
         }
 
         switch (action.actionType) {
