@@ -17,10 +17,6 @@ function WebSocket() {
         console.log(data);
     });
 
-    p2p.on('peer-msg', function (data) {
-        console.log('From a peer %s', data);
-    });
-
     return p2p;
 }
 

@@ -88,10 +88,10 @@ var DataLasso = class DataLasso {
      * @returns {HTMLElement} - Element containing Data Lasso
      */
     render () {
-        // if (this.getMode() == 'master') {
-        //     ReactDom.render(<DataLassoUI/>, this.el);
-        // }
-        ReactDom.render(<DataLassoUI/>, this.el);
+        if (this.getMode() == 'master') {
+            ReactDom.render(<DataLassoUI/>, this.el);
+        }
+        //ReactDom.render(<DataLassoUI/>, this.el);
         this.graph = new Graph(this.options);
         this.el.appendChild(this.graph.el);
     }

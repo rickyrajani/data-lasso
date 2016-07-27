@@ -42,16 +42,23 @@ var DataModel = Model.extend({
      */
     dispatchCallback: function (action) {
         if (this.p2p) {
-            this.p2p.emit('peer-msg', 'action');
-            this.p2p.on('peer-msg', function(data) {
-                //console.log(data);
-            });
+            if(this.options.mode == 'master') {
+                this.p2p.emit('peer-msg', action);
+            }
         }
 
         switch (action.actionType) {
             case 'options-set':
                 this.options = action.options;
                 this.p2p = new WebSocket(this.options);
+
+                this.p2p.on('peer-msg', (actionData) => {
+                    if(this.options.mode == 'client') {
+                        //console.log(actionData);
+                        this.dispatchCallback(actionData);
+                    }
+                });
+
                 break;
 
             case 'file-uploaded':
